@@ -1,0 +1,836 @@
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-1030-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Apr 20 13:10:42 UTC 2023
+
+  System load:  0.2060546875      Processes:             108
+  Usage of /:   20.7% of 9.51GB   Users logged in:       0
+  Memory usage: 26%               IPv4 address for ens4: 10.128.0.2
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Thu Apr 13 13:38:02 2023 from 35.235.241.19
+stryjek_michal@instance-1:~$ dir
+test.txt
+stryjek_michal@instance-1:~$ cd ..
+stryjek_michal@instance-1:/home$ dir
+stryjek_michal  ubuntu
+stryjek_michal@instance-1:/home$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  1.1  1.3 167648 13076 ?        Ss   13:09   0:02 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    13:09   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   13:09   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   13:09   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   13:09   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   13:09   0:00 [netns]
+root           7  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:0-rcu_gp]
+root           8  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/0:0H-events_highpri]
+root           9  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:0-flush-8:0]
+root          10  0.0  0.0      0     0 ?        I<   13:09   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    13:09   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    13:09   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    13:09   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    13:09   0:00 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    13:09   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    13:09   0:00 [idle_inject/0]
+root          17  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:1-events]
+root          18  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    13:09   0:00 [idle_inject/1]
+root          21  0.1  0.0      0     0 ?        S    13:09   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    13:09   0:00 [ksoftirqd/1]
+root          23  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:0-cgroup_destroy]
+root          24  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/1:0H-events_highpri]
+root          25  0.0  0.0      0     0 ?        S    13:09   0:00 [kdevtmpfs]
+root          26  0.0  0.0      0     0 ?        I<   13:09   0:00 [inet_frag_wq]
+root          27  0.0  0.0      0     0 ?        S    13:09   0:00 [kauditd]
+root          28  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:1-cgroup_destroy]
+root          29  0.0  0.0      0     0 ?        S    13:09   0:00 [khungtaskd]
+root          30  0.0  0.0      0     0 ?        S    13:09   0:00 [oom_reaper]
+root          31  0.0  0.0      0     0 ?        I<   13:09   0:00 [writeback]
+root          32  0.0  0.0      0     0 ?        S    13:09   0:00 [kcompactd0]
+root          33  0.0  0.0      0     0 ?        SN   13:09   0:00 [ksmd]
+root          34  0.0  0.0      0     0 ?        SN   13:09   0:00 [khugepaged]
+root          80  0.0  0.0      0     0 ?        I<   13:09   0:00 [kintegrityd]
+root          81  0.0  0.0      0     0 ?        I<   13:09   0:00 [kblockd]
+root          82  0.0  0.0      0     0 ?        I<   13:09   0:00 [blkcg_punt_bio]
+root          83  0.0  0.0      0     0 ?        I<   13:09   0:00 [tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   13:09   0:00 [ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   13:09   0:00 [md]
+root          86  0.0  0.0      0     0 ?        I<   13:09   0:00 [edac-poller]
+root          87  0.0  0.0      0     0 ?        I<   13:09   0:00 [devfreq_wq]
+root          88  0.0  0.0      0     0 ?        S    13:09   0:00 [watchdogd]
+root          89  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:1-flush-8:0]
+root          90  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/0:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        S    13:09   0:00 [kswapd0]
+root          93  0.0  0.0      0     0 ?        S    13:09   0:00 [ecryptfs-kthrea]
+root          95  0.0  0.0      0     0 ?        I<   13:09   0:00 [kthrotld]
+root          96  0.0  0.0      0     0 ?        I<   13:09   0:00 [acpi_thermal_pm]
+root          97  0.0  0.0      0     0 ?        S    13:09   0:00 [scsi_eh_0]
+root          98  0.0  0.0      0     0 ?        I<   13:09   0:00 [scsi_tmf_0]
+root          99  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-wq]
+root         100  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-reset-wq]
+root         101  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-delete-wq]
+root         102  0.0  0.0      0     0 ?        I<   13:09   0:00 [vfio-irqfd-clea]
+root         103  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:2-loop1]
+root         104  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/1:1H-kblockd]
+root         105  0.0  0.0      0     0 ?        I<   13:09   0:00 [mld]
+root         106  0.0  0.0      0     0 ?        I<   13:09   0:00 [ipv6_addrconf]
+root         107  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:2-events_freezable]
+root         116  0.0  0.0      0     0 ?        I<   13:09   0:00 [kstrp]
+root         119  0.0  0.0      0     0 ?        I<   13:09   0:00 [zswap-shrink]
+root         120  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/u5:0]
+root         127  0.0  0.0      0     0 ?        I<   13:09   0:00 [charger_manager]
+root         128  0.0  0.0      0     0 ?        S    13:09   0:00 [jbd2/sda1-8]
+root         129  0.0  0.0      0     0 ?        I<   13:09   0:00 [ext4-rsv-conver]
+root         130  0.0  0.0      0     0 ?        S    13:09   0:00 [hwrng]
+root         169  0.1  1.3  39872 13288 ?        S<s  13:09   0:00 /lib/systemd/systemd-journald
+root         188  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:2-events]
+root         192  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:3-cgroup_destroy]
+root         193  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:4-cgroup_destroy]
+root         194  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:3-events_unbound]
+root         205  0.0  0.0      0     0 ?        I<   13:09   0:00 [kaluad]
+root         207  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpath_rdacd]
+root         208  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpathd]
+root         209  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpath_handlerd]
+root         213  0.0  2.7 289348 27100 ?        SLsl 13:09   0:00 /sbin/multipathd -d -s
+root         216  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:3-events]
+root         217  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:4]
+root         225  0.1  0.6  22912  6528 ?        Ss   13:09   0:00 /lib/systemd/systemd-udevd
+root         240  0.0  0.0      0     0 ?        I<   13:09   0:00 [cryptd]
+root         312  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:4-flush-8:0]
+root         314  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:5-events_unbound]
+systemd+     420  0.0  0.8  16252  8144 ?        Ss   13:09   0:00 /lib/systemd/systemd-networkd
+systemd+     422  0.0  1.2  25260 12400 ?        Ss   13:09   0:00 /lib/systemd/systemd-resolved
+message+     456  0.0  0.4   8612  4740 ?        Ss   13:09   0:00 @dbus-daemon --system --address=systemd: --nofork -
+root         461  0.0  2.0 1238276 20412 ?       Ssl  13:09   0:00 /usr/bin/google_osconfig_agent
+_chrony      469  0.0  0.3  18916  3448 ?        S    13:09   0:00 /usr/sbin/chronyd -F 1
+_chrony      472  0.0  0.0  10588   524 ?        S    13:09   0:00 /usr/sbin/chronyd -F 1
+root         474  0.0  1.9  33128 18880 ?        Ss   13:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run
+syslog       480  0.0  0.5 222400  5628 ?        Ssl  13:09   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         484  3.5  4.7 1022692 46548 ?       Ssl  13:09   0:06 /usr/lib/snapd/snapd
+root         527  0.0  1.5 1379600 15740 ?       Ssl  13:09   0:00 /usr/bin/google_guest_agent
+root         543  0.0  2.1 110072 21436 ?        Ssl  13:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/una
+root         615  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:5]
+root         620  0.0  0.8 235448  8224 ?        Ssl  13:09   0:00 /usr/libexec/polkitd --no-debug
+root         635  0.0  0.1   6216  1076 ttyS0    Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,3
+root         638  0.0  0.9  15424  9192 ?        Ss   13:09   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 star
+root         645  0.0  0.1   6172  1108 tty1     Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         673  0.0  0.7  15364  7388 ?        Ss   13:09   0:00 /lib/systemd/systemd-logind
+root         677  0.0  0.2   7284  2856 ?        Ss   13:09   0:00 /usr/sbin/cron -f -P
+root        1007  0.0  1.1  17048 11024 ?        Ss   13:10   0:00 sshd: stryjek_michal [priv]
+stryjek+    1010  0.0  0.9  17060  9416 ?        Ss   13:10   0:00 /lib/systemd/systemd --user
+stryjek+    1011  0.0  0.5 170432  4968 ?        S    13:10   0:00 (sd-pam)
+stryjek+    1096  0.0  0.8  17188  8008 ?        R    13:10   0:00 sshd: stryjek_michal@pts/0
+stryjek+    1099  0.0  0.5   9080  5288 pts/0    Ss   13:10   0:00 -bash
+stryjek+    1118  0.0  0.3  10460  3228 pts/0    R+   13:12   0:00 ps aux
+stryjek_michal@instance-1:/home$ ps
+    PID TTY          TIME CMD
+   1099 pts/0    00:00:00 bash
+   1119 pts/0    00:00:00 ps
+stryjek_michal@instance-1:/home$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  1.1  1.3 167648 13076 ?        Ss   13:09   0:02 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    13:09   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   13:09   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   13:09   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   13:09   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   13:09   0:00 [netns]
+root           7  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:0-rcu_gp]
+root           8  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/0:0H-events_highpri]
+root           9  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:0-flush-8:0]
+root          10  0.0  0.0      0     0 ?        I<   13:09   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    13:09   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    13:09   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    13:09   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    13:09   0:00 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    13:09   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    13:09   0:00 [idle_inject/0]
+root          17  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:1-events]
+root          18  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    13:09   0:00 [idle_inject/1]
+root          21  0.1  0.0      0     0 ?        S    13:09   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    13:09   0:00 [ksoftirqd/1]
+root          23  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:0-cgroup_destroy]
+root          24  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/1:0H-events_highpri]
+root          25  0.0  0.0      0     0 ?        S    13:09   0:00 [kdevtmpfs]
+root          26  0.0  0.0      0     0 ?        I<   13:09   0:00 [inet_frag_wq]
+root          27  0.0  0.0      0     0 ?        S    13:09   0:00 [kauditd]
+root          28  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:1-cgroup_destroy]
+root          29  0.0  0.0      0     0 ?        S    13:09   0:00 [khungtaskd]
+root          30  0.0  0.0      0     0 ?        S    13:09   0:00 [oom_reaper]
+root          31  0.0  0.0      0     0 ?        I<   13:09   0:00 [writeback]
+root          32  0.0  0.0      0     0 ?        S    13:09   0:00 [kcompactd0]
+root          33  0.0  0.0      0     0 ?        SN   13:09   0:00 [ksmd]
+root          34  0.0  0.0      0     0 ?        SN   13:09   0:00 [khugepaged]
+root          80  0.0  0.0      0     0 ?        I<   13:09   0:00 [kintegrityd]
+root          81  0.0  0.0      0     0 ?        I<   13:09   0:00 [kblockd]
+root          82  0.0  0.0      0     0 ?        I<   13:09   0:00 [blkcg_punt_bio]
+root          83  0.0  0.0      0     0 ?        I<   13:09   0:00 [tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   13:09   0:00 [ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   13:09   0:00 [md]
+root          86  0.0  0.0      0     0 ?        I<   13:09   0:00 [edac-poller]
+root          87  0.0  0.0      0     0 ?        I<   13:09   0:00 [devfreq_wq]
+root          88  0.0  0.0      0     0 ?        S    13:09   0:00 [watchdogd]
+root          89  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:1-flush-8:0]
+root          90  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/0:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        S    13:09   0:00 [kswapd0]
+root          93  0.0  0.0      0     0 ?        S    13:09   0:00 [ecryptfs-kthrea]
+root          95  0.0  0.0      0     0 ?        I<   13:09   0:00 [kthrotld]
+root          96  0.0  0.0      0     0 ?        I<   13:09   0:00 [acpi_thermal_pm]
+root          97  0.0  0.0      0     0 ?        S    13:09   0:00 [scsi_eh_0]
+root          98  0.0  0.0      0     0 ?        I<   13:09   0:00 [scsi_tmf_0]
+root          99  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-wq]
+root         100  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-reset-wq]
+root         101  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-delete-wq]
+root         102  0.0  0.0      0     0 ?        I<   13:09   0:00 [vfio-irqfd-clea]
+root         103  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:2-loop1]
+root         104  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/1:1H-kblockd]
+root         105  0.0  0.0      0     0 ?        I<   13:09   0:00 [mld]
+root         106  0.0  0.0      0     0 ?        I<   13:09   0:00 [ipv6_addrconf]
+root         107  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:2-events]
+root         116  0.0  0.0      0     0 ?        I<   13:09   0:00 [kstrp]
+root         119  0.0  0.0      0     0 ?        I<   13:09   0:00 [zswap-shrink]
+root         120  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/u5:0]
+root         127  0.0  0.0      0     0 ?        I<   13:09   0:00 [charger_manager]
+root         128  0.0  0.0      0     0 ?        S    13:09   0:00 [jbd2/sda1-8]
+root         129  0.0  0.0      0     0 ?        I<   13:09   0:00 [ext4-rsv-conver]
+root         130  0.0  0.0      0     0 ?        S    13:09   0:00 [hwrng]
+root         169  0.1  1.3  39872 13288 ?        S<s  13:09   0:00 /lib/systemd/systemd-journald
+root         188  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:2-events]
+root         192  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:3-cgroup_destroy]
+root         193  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:4-cgroup_destroy]
+root         194  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:3-events_unbound]
+root         205  0.0  0.0      0     0 ?        I<   13:09   0:00 [kaluad]
+root         207  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpath_rdacd]
+root         208  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpathd]
+root         209  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpath_handlerd]
+root         213  0.0  2.7 289348 27100 ?        SLsl 13:09   0:00 /sbin/multipathd -d -s
+root         216  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:3-events]
+root         217  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:4]
+root         225  0.1  0.6  22912  6528 ?        Ss   13:09   0:00 /lib/systemd/systemd-udevd
+root         240  0.0  0.0      0     0 ?        I<   13:09   0:00 [cryptd]
+root         312  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:4-flush-8:0]
+root         314  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:5-events_unbound]
+systemd+     420  0.0  0.8  16252  8144 ?        Ss   13:09   0:00 /lib/systemd/systemd-networkd
+systemd+     422  0.0  1.2  25260 12400 ?        Ss   13:09   0:00 /lib/systemd/systemd-resolved
+message+     456  0.0  0.4   8612  4740 ?        Ss   13:09   0:00 @dbus-daemon --system --address=systemd: --nofork -
+root         461  0.0  2.0 1238276 20412 ?       Ssl  13:09   0:00 /usr/bin/google_osconfig_agent
+_chrony      469  0.0  0.3  18916  3448 ?        S    13:09   0:00 /usr/sbin/chronyd -F 1
+_chrony      472  0.0  0.0  10588   524 ?        S    13:09   0:00 /usr/sbin/chronyd -F 1
+root         474  0.0  1.9  33128 18880 ?        Ss   13:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run
+syslog       480  0.0  0.5 222400  5628 ?        Ssl  13:09   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         484  3.3  4.7 1022692 46548 ?       Ssl  13:09   0:06 /usr/lib/snapd/snapd
+root         527  0.0  1.5 1379600 15740 ?       Ssl  13:09   0:00 /usr/bin/google_guest_agent
+root         543  0.0  2.1 110072 21436 ?        Ssl  13:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/una
+root         615  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:5]
+root         620  0.0  0.8 235448  8224 ?        Ssl  13:09   0:00 /usr/libexec/polkitd --no-debug
+root         635  0.0  0.1   6216  1076 ttyS0    Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,3
+root         638  0.0  0.9  15424  9192 ?        Ss   13:09   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 star
+root         645  0.0  0.1   6172  1108 tty1     Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         673  0.0  0.7  15364  7388 ?        Ss   13:09   0:00 /lib/systemd/systemd-logind
+root         677  0.0  0.2   7284  2856 ?        Ss   13:09   0:00 /usr/sbin/cron -f -P
+root        1007  0.0  1.1  17048 11024 ?        Ss   13:10   0:00 sshd: stryjek_michal [priv]
+stryjek+    1010  0.0  0.9  17060  9416 ?        Ss   13:10   0:00 /lib/systemd/systemd --user
+stryjek+    1011  0.0  0.5 170432  4968 ?        S    13:10   0:00 (sd-pam)
+stryjek+    1096  0.0  0.8  17188  8008 ?        R    13:10   0:00 sshd: stryjek_michal@pts/0
+stryjek+    1099  0.0  0.5   9080  5288 pts/0    Ss   13:10   0:00 -bash
+stryjek+    1120  0.0  0.3  10460  3284 pts/0    R+   13:12   0:00 ps aux
+stryjek_michal@instance-1:/home$ ps --help
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+stryjek_michal@instance-1:/home$ ps --help a
+
+Usage:
+ ps [options]
+
+Basic options:
+ -A, -e               all processes
+ -a                   all with tty, except session leaders
+  a                   all with tty, including other users
+ -d                   all except session leaders
+ -N, --deselect       negate selection
+  r                   only running processes
+  T                   all processes on this terminal
+  x                   processes without controlling ttys
+
+Selection by list:
+ -C <command>         command name
+ -G, --Group <GID>    real group id or name
+ -g, --group <group>  session or effective group name
+ -p, p, --pid <PID>   process id
+        --ppid <PID>  parent process id
+ -q, q, --quick-pid <PID>
+                      process id (quick mode)
+ -s, --sid <session>  session id
+ -t, t, --tty <tty>   terminal
+ -u, U, --user <UID>  effective user id or name
+ -U, --User <UID>     real user id or name
+
+  The selection options take as their argument either:
+    a comma-separated list e.g. '-u root,nobody' or
+    a blank-separated list e.g. '-p 123 4567'
+
+Output formats:
+ -F                   extra full
+ -f                   full-format, including command lines
+  f, --forest         ascii art process tree
+ -H                   show process hierarchy
+ -j                   jobs format
+  j                   BSD job control format
+ -l                   long format
+  l                   BSD long format
+ -M, Z                add security data (for SELinux)
+ -O <format>          preloaded with default columns
+  O <format>          as -O, with BSD personality
+ -o, o, --format <format>
+                      user-defined format
+  s                   signal format
+  u                   user-oriented format
+  v                   virtual memory format
+  X                   register format
+ -y                   do not show flags, show rss vs. addr (used with -l)
+     --context        display security context (for SELinux)
+     --headers        repeat header lines, one per page
+     --no-headers     do not print header at all
+     --cols, --columns, --width <num>
+                      set screen width
+     --rows, --lines <num>
+                      set screen height
+
+Show threads:
+  H                   as if they were processes
+ -L                   possibly with LWP and NLWP columns
+ -m, m                after processes
+ -T                   possibly with SPID column
+
+Miscellaneous options:
+ -c                   show scheduling class with -l option
+  c                   show true command name
+  e                   show the environment after command
+  k,    --sort        specify sort order as: [+|-]key[,[+|-]key[,...]]
+  L                   show format specifiers
+  n                   display numeric uid and wchan
+  S,    --cumulative  include some dead child process data
+ -y                   do not show flags, show rss (only with -l)
+ -V, V, --version     display version information and exit
+ -w, w                unlimited output width
+
+        --help <simple|list|output|threads|misc|all>
+                      display help and exit
+
+For more details see ps(1).
+stryjek_michal@instance-1:/home$ ps a
+    PID TTY      STAT   TIME COMMAND
+    635 ttyS0    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyS0 vt220
+    645 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+   1099 pts/0    Ss     0:00 -bash
+   1151 pts/0    R+     0:00 ps a
+stryjek_michal@instance-1:/home$ ps au
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         635  0.0  0.1   6216  1076 ttyS0    Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,3
+root         645  0.0  0.1   6172  1108 tty1     Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+stryjek+    1099  0.0  0.5   9080  5288 pts/0    Ss   13:10   0:00 -bash
+stryjek+    1152  0.0  0.3  10460  3356 pts/0    R+   13:14   0:00 ps au
+stryjek_michal@instance-1:/home$ ps -cpu
+error: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+stryjek_michal@instance-1:/home$ ps cpu
+error: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+stryjek_michal@instance-1:/home$ ps a
+    PID TTY      STAT   TIME COMMAND
+    635 ttyS0    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyS0 vt220
+    645 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+   1099 pts/0    Ss     0:00 -bash
+   1158 pts/0    R+     0:00 ps a
+stryjek_michal@instance-1:/home$ ps aux | grep %cpu%
+stryjek+    1160  0.0  0.2   7004  2088 pts/0    R+   13:16   0:00 grep --color=auto %cpu%
+stryjek_michal@instance-1:/home$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.5  1.3 167648 13076 ?        Ss   13:09   0:02 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    13:09   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   13:09   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   13:09   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   13:09   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   13:09   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   13:09   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    13:09   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    13:09   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    13:09   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    13:09   0:00 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    13:09   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    13:09   0:00 [idle_inject/0]
+root          17  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:1-events]
+root          18  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    13:09   0:00 [idle_inject/1]
+root          21  0.0  0.0      0     0 ?        S    13:09   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    13:09   0:00 [ksoftirqd/1]
+root          23  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:0-cgroup_destroy]
+root          24  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/1:0H-events_highpri]
+root          25  0.0  0.0      0     0 ?        S    13:09   0:00 [kdevtmpfs]
+root          26  0.0  0.0      0     0 ?        I<   13:09   0:00 [inet_frag_wq]
+root          27  0.0  0.0      0     0 ?        S    13:09   0:00 [kauditd]
+root          28  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:1-events_freezable]
+root          29  0.0  0.0      0     0 ?        S    13:09   0:00 [khungtaskd]
+root          30  0.0  0.0      0     0 ?        S    13:09   0:00 [oom_reaper]
+root          31  0.0  0.0      0     0 ?        I<   13:09   0:00 [writeback]
+root          32  0.0  0.0      0     0 ?        S    13:09   0:00 [kcompactd0]
+root          33  0.0  0.0      0     0 ?        SN   13:09   0:00 [ksmd]
+root          34  0.0  0.0      0     0 ?        SN   13:09   0:00 [khugepaged]
+root          80  0.0  0.0      0     0 ?        I<   13:09   0:00 [kintegrityd]
+root          81  0.0  0.0      0     0 ?        I<   13:09   0:00 [kblockd]
+root          82  0.0  0.0      0     0 ?        I<   13:09   0:00 [blkcg_punt_bio]
+root          83  0.0  0.0      0     0 ?        I<   13:09   0:00 [tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   13:09   0:00 [ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   13:09   0:00 [md]
+root          86  0.0  0.0      0     0 ?        I<   13:09   0:00 [edac-poller]
+root          87  0.0  0.0      0     0 ?        I<   13:09   0:00 [devfreq_wq]
+root          88  0.0  0.0      0     0 ?        S    13:09   0:00 [watchdogd]
+root          90  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/0:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        S    13:09   0:00 [kswapd0]
+root          93  0.0  0.0      0     0 ?        S    13:09   0:00 [ecryptfs-kthrea]
+root          95  0.0  0.0      0     0 ?        I<   13:09   0:00 [kthrotld]
+root          96  0.0  0.0      0     0 ?        I<   13:09   0:00 [acpi_thermal_pm]
+root          97  0.0  0.0      0     0 ?        S    13:09   0:00 [scsi_eh_0]
+root          98  0.0  0.0      0     0 ?        I<   13:09   0:00 [scsi_tmf_0]
+root          99  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-wq]
+root         100  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-reset-wq]
+root         101  0.0  0.0      0     0 ?        I<   13:09   0:00 [nvme-delete-wq]
+root         102  0.0  0.0      0     0 ?        I<   13:09   0:00 [vfio-irqfd-clea]
+root         104  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/1:1H-kblockd]
+root         105  0.0  0.0      0     0 ?        I<   13:09   0:00 [mld]
+root         106  0.0  0.0      0     0 ?        I<   13:09   0:00 [ipv6_addrconf]
+root         107  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/1:2-events]
+root         116  0.0  0.0      0     0 ?        I<   13:09   0:00 [kstrp]
+root         119  0.0  0.0      0     0 ?        I<   13:09   0:00 [zswap-shrink]
+root         120  0.0  0.0      0     0 ?        I<   13:09   0:00 [kworker/u5:0]
+root         127  0.0  0.0      0     0 ?        I<   13:09   0:00 [charger_manager]
+root         128  0.0  0.0      0     0 ?        S    13:09   0:00 [jbd2/sda1-8]
+root         129  0.0  0.0      0     0 ?        I<   13:09   0:00 [ext4-rsv-conver]
+root         130  0.0  0.0      0     0 ?        S    13:09   0:00 [hwrng]
+root         169  0.0  1.3  48068 13516 ?        S<s  13:09   0:00 /lib/systemd/systemd-journald
+root         188  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/0:2-events]
+root         194  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:3-events_power_efficient]
+root         205  0.0  0.0      0     0 ?        I<   13:09   0:00 [kaluad]
+root         207  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpath_rdacd]
+root         208  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpathd]
+root         209  0.0  0.0      0     0 ?        I<   13:09   0:00 [kmpath_handlerd]
+root         213  0.0  2.7 289348 27100 ?        SLsl 13:09   0:00 /sbin/multipathd -d -s
+root         225  0.0  0.6  22912  6528 ?        Ss   13:09   0:00 /lib/systemd/systemd-udevd
+root         240  0.0  0.0      0     0 ?        I<   13:09   0:00 [cryptd]
+root         312  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:4-events_unbound]
+root         314  0.0  0.0      0     0 ?        I    13:09   0:00 [kworker/u4:5-flush-8:0]
+systemd+     420  0.0  0.8  16252  8144 ?        Ss   13:09   0:00 /lib/systemd/systemd-networkd
+systemd+     422  0.0  1.2  25260 12400 ?        Ss   13:09   0:00 /lib/systemd/systemd-resolved
+message+     456  0.0  0.4   8612  4740 ?        Ss   13:09   0:00 @dbus-daemon --system --address=systemd: --nofork -
+root         461  0.0  2.0 1238276 20008 ?       Ssl  13:09   0:00 /usr/bin/google_osconfig_agent
+_chrony      469  0.0  0.3  18916  3448 ?        S    13:09   0:00 /usr/sbin/chronyd -F 1
+_chrony      472  0.0  0.0  10588   524 ?        S    13:09   0:00 /usr/sbin/chronyd -F 1
+root         474  0.0  1.9  33128 18880 ?        Ss   13:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run
+syslog       480  0.0  0.5 222400  5628 ?        Ssl  13:09   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         484  1.5  4.7 1022692 46548 ?       Ssl  13:09   0:06 /usr/lib/snapd/snapd
+root         527  0.0  1.5 1379600 15484 ?       Ssl  13:09   0:00 /usr/bin/google_guest_agent
+root         543  0.0  2.1 110072 21436 ?        Ssl  13:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/una
+root         620  0.0  0.8 235448  8224 ?        Ssl  13:09   0:00 /usr/libexec/polkitd --no-debug
+root         635  0.0  0.1   6216  1076 ttyS0    Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,3
+root         638  0.0  0.9  15424  9192 ?        Ss   13:09   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 star
+root         645  0.0  0.1   6172  1108 tty1     Ss+  13:09   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         673  0.0  0.7  15364  7388 ?        Ss   13:09   0:00 /lib/systemd/systemd-logind
+root         677  0.0  0.2   7284  2856 ?        Ss   13:09   0:00 /usr/sbin/cron -f -P
+root        1007  0.0  1.1  17048 11024 ?        Ss   13:10   0:00 sshd: stryjek_michal [priv]
+stryjek+    1010  0.0  0.9  17060  9416 ?        Ss   13:10   0:00 /lib/systemd/systemd --user
+stryjek+    1011  0.0  0.5 170432  4968 ?        S    13:10   0:00 (sd-pam)
+stryjek+    1096  0.0  0.8  17188  8008 ?        S    13:10   0:00 sshd: stryjek_michal@pts/0
+stryjek+    1099  0.0  0.5   9080  5288 pts/0    Ss   13:10   0:00 -bash
+stryjek+    1161  0.0  0.3  10460  3308 pts/0    R+   13:16   0:00 ps aux
+stryjek_michal@instance-1:/home$ grep cpu
+cd ..
+^[[A
+^Z
+[1]+  Stopped                 grep --color=auto cpu
+stryjek_michal@instance-1:/home$ htop
+
+[2]+  Stopped                 htop
+stryjek_michal@instance-1:/home$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP group default qlen 1000
+    link/ether 42:01:0a:80:00:02 brd ff:ff:ff:ff:ff:ff
+    inet 10.128.0.2/32 metric 100 scope global dynamic ens4
+       valid_lft 2995sec preferred_lft 2995sec
+    inet6 fe80::4001:aff:fe80:2/64 scope link 
+       valid_lft forever preferred_lft forever
+stryjek_michal@instance-1:/home$ ps aux | grep 'cpu'
+root          10  0.0  0.0      0     0 ?        I<   13:09   0:00 [mm_percpu_wq]
+root          18  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    13:09   0:00 [cpuhp/1]
+stryjek+    1162  0.0  0.2   7004  2208 pts/0    T    13:16   0:00 grep --color=auto cpu
+stryjek+    1171  0.0  0.2   7004  2132 pts/0    R+   13:21   0:00 grep --color=auto cpu
+stryjek_michal@instance-1:/home$ ip --help
+Usage: ip [ OPTIONS ] OBJECT { COMMAND | help }
+       ip [ -force ] -batch filename
+where  OBJECT := { address | addrlabel | fou | help | ila | ioam | l2tp | link |
+                   macsec | maddress | monitor | mptcp | mroute | mrule |
+                   neighbor | neighbour | netconf | netns | nexthop | ntable |
+                   ntbl | route | rule | sr | tap | tcpmetrics |
+                   token | tunnel | tuntap | vrf | xfrm }
+       OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
+                    -h[uman-readable] | -iec | -j[son] | -p[retty] |
+                    -f[amily] { inet | inet6 | mpls | bridge | link } |
+                    -4 | -6 | -M | -B | -0 |
+                    -l[oops] { maximum-addr-flush-attempts } | -br[ief] |
+                    -o[neline] | -t[imestamp] | -ts[hort] | -b[atch] [filename] |
+                    -rc[vbuf] [size] | -n[etns] name | -N[umeric] | -a[ll] |
+                    -c[olor]}
+stryjek_michal@instance-1:/home$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP group default qlen 1000
+    link/ether 42:01:0a:80:00:02 brd ff:ff:ff:ff:ff:ff
+    inet 10.128.0.2/32 metric 100 scope global dynamic ens4
+       valid_lft 2489sec preferred_lft 2489sec
+    inet6 fe80::4001:aff:fe80:2/64 scope link 
+       valid_lft forever preferred_lft forever
+stryjek_michal@instance-1:/home$ ip a | tail 3
+tail: cannot open '3' for reading: No such file or directory
+stryjek_michal@instance-1:/home$ ip a | tail -n 3
+       valid_lft 2428sec preferred_lft 2428sec
+    inet6 fe80::4001:aff:fe80:2/64 scope link 
+       valid_lft forever preferred_lft forever
+stryjek_michal@instance-1:/home$ dir
+stryjek_michal  ubuntu
+stryjek_michal@instance-1:/home$ cd stryjek_michal/
+stryjek_michal@instance-1:~$ dir
+test.txt
+stryjek_michal@instance-1:~$ cd etc/
+-bash: cd: etc/: No such file or directory
+stryjek_michal@instance-1:~$ dir
+test.txt
+stryjek_michal@instance-1:~$ cd ..
+stryjek_michal@instance-1:/home$ dir
+stryjek_michal  ubuntu
+stryjek_michal@instance-1:/home$ cd ubuntu
+stryjek_michal@instance-1:/home/ubuntu$ dir
+stryjek_michal@instance-1:/home/ubuntu$ dir
+stryjek_michal@instance-1:/home/ubuntu$ cd root
+-bash: cd: root: No such file or directory
+stryjek_michal@instance-1:/home/ubuntu$ sudo ls -a/etc
+ls: invalid option -- '/'
+Try 'ls --help' for more information.
+stryjek_michal@instance-1:/home/ubuntu$ sudo ls -a
+.  ..  .bash_logout  .bashrc  .profile  .ssh
+stryjek_michal@instance-1:/home/ubuntu$ ls
+stryjek_michal@instance-1:/home/ubuntu$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            change the default of using modification times;
+                               access time (-u): atime, access, use;
+                               change time (-c): ctime, status;
+                               birth time: birth, creation;
+                             with -l, WORD determines which time to show;
+                             with --sort=time, sort by WORD (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by time, newest first; see --time
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+stryjek_michal@instance-1:/home/ubuntu$ sudo ls -a
+.  ..  .bash_logout  .bashrc  .profile  .ssh
+stryjek_michal@instance-1:/home/ubuntu$ cd ..
+stryjek_michal@instance-1:/home$ cd ..
+stryjek_michal@instance-1:/$ dir
+bin   dev  home  lib32  libx32      media  opt   root  sbin  srv  tmp  var
+boot  etc  lib   lib64  lost+found  mnt    proc  run   snap  sys  usr
+stryjek_michal@instance-1:/$ cd etc
+stryjek_michal@instance-1:/etc$ cd ..
+stryjek_michal@instance-1:/$ cd etc/nvme
+stryjek_michal@instance-1:/etc/nvme$ dir
+discovery.conf  hostid  hostnqn
+stryjek_michal@instance-1:/etc/nvme$ discovery.conf | head -n 3
+discovery.conf: command not found
+stryjek_michal@instance-1:/etc/nvme$ discovery.conf
+discovery.conf: command not found
+stryjek_michal@instance-1:/etc/nvme$ ls
+discovery.conf  hostid  hostnqn
+stryjek_michal@instance-1:/etc/nvme$ ls -a
+.  ..  discovery.conf  hostid  hostnqn
+stryjek_michal@instance-1:/etc/nvme$ cd discovery.conf
+-bash: cd: discovery.conf: Not a directory
+stryjek_michal@instance-1:/etc/nvme$ discovery.conf
+discovery.conf: command not found
+stryjek_michal@instance-1:/etc/nvme$ cd hostid
+-bash: cd: hostid: Not a directory
+stryjek_michal@instance-1:/etc/nvme$ hostid
+800a0200
+stryjek_michal@instance-1:/etc/nvme$ histnqn
+histnqn: command not found
+stryjek_michal@instance-1:/etc/nvme$ hostnqn
+hostnqn: command not found
+stryjek_michal@instance-1:/etc/nvme$ cd hostnqn
+-bash: cd: hostnqn: Not a directory
+stryjek_michal@instance-1:/etc/nvme$ dir
+discovery.conf  hostid  hostnqn
+stryjek_michal@instance-1:/etc/nvme$ cd ..
+stryjek_michal@instance-1:/etc$ cd nvme/
+stryjek_michal@instance-1:/etc/nvme$ host
+Usage: host [-aCdilrTvVw] [-c class] [-N ndots] [-t type] [-W time]
+            [-R number] [-m flag] [-p port] hostname [server]
+       -a is equivalent to -v -t ANY
+       -A is like -a but omits RRSIG, NSEC, NSEC3
+       -c specifies query class for non-IN data
+       -C compares SOA records on authoritative nameservers
+       -d is equivalent to -v
+       -l lists all hosts in a domain, using AXFR
+       -m set memory debugging flag (trace|record|usage)
+       -N changes the number of dots allowed before root lookup is done
+       -p specifies the port on the server to query
+       -r disables recursive processing
+       -R specifies number of retries for UDP packets
+       -s a SERVFAIL response should stop query
+       -t specifies the query type
+       -T enables TCP/IP mode
+       -U enables UDP mode
+       -v enables verbose output
+       -V print version number and exit
+       -w specifies to wait forever for a reply
+       -W specifies how long to wait for a reply
+       -4 use IPv4 query transport only
+       -6 use IPv6 query transport only
+stryjek_michal@instance-1:/etc/nvme$ cd ..
+stryjek_michal@instance-1:/etc$ dir
+NetworkManager                 dpkg                libaudit.conf        os-release              skel
+PackageKit                     e2scrub.conf        libblockdev          overlayroot.conf        sos
+X11                            ec2_version         libnl-3              overlayroot.local.conf  ssh
+adduser.conf                   environment         locale.alias         pam.conf                ssl
+alternatives                   ethertypes          locale.gen           pam.d                   subgid
+apparmor                       fstab               localtime            passwd                  subgid-
+apparmor.d                     fuse.conf           logcheck             passwd-                 subuid
+apport                         gai.conf            login.defs           perl                    subuid-
+apt                            google_instance_id  logrotate.conf       pm                      sudo.conf
+bash.bashrc                    groff               logrotate.d          polkit-1                sudo_logsrvd.conf
+bash_completion                group               lsb-release          pollinate               sudoers
+bash_completion.d              group-              lvm                  ppp                     sudoers.d
+bindresvport.blacklist         grub.d              machine-id           profile                 sysctl.conf
+binfmt.d                       gshadow             magic                profile.d               sysctl.d
+boto.cfg                       gshadow-            magic.mime           protocols               systemd
+byobu                          gss                 manpath.config       python3                 terminfo
+ca-certificates                hdparm.conf         mdadm                python3.10              timezone
+ca-certificates.conf           host.conf           mime.types           rc0.d                   tmpfiles.d
+ca-certificates.conf.dpkg-old  hostname            mke2fs.conf          rc1.d                   ubuntu-advantage
+chrony                         hosts               modprobe.d           rc2.d                   ucf.conf
+cloud                          hosts.allow         modules              rc3.d                   udev
+console-setup                  hosts.deny          modules-load.d       rc4.d                   ufw
+cron.d                         init.d              mtab                 rc5.d                   update-manager
+cron.daily                     initramfs-tools     multipath            rc6.d                   update-motd.d
+cron.hourly                    inputrc             multipath.conf       rcS.d                   update-notifier
+cron.monthly                   iproute2            nanorc               resolv.conf             usb_modeswitch.conf
+cron.weekly                    iscsi               needrestart          rmt                     usb_modeswitch.d
+crontab                        issue               netconfig            rpc                     vim
+cryptsetup-initramfs           issue.net           netplan              rsyslog.conf            vmware-tools
+crypttab                       kernel              network              rsyslog.d               vtrgb
+dbus-1                         kernel-img.conf     networkd-dispatcher  screenrc                wgetrc
+debconf.conf                   landscape           networks             security                xattr.conf
+debian_version                 ld.so.cache         newt                 selinux                 xdg
+default                        ld.so.conf          nftables.conf        services                zsh_command_not_found
+deluser.conf                   ld.so.conf.d        nsswitch.conf        shadow
+depmod.d                       ldap                nvme                 shadow-
+dhcp                           legal               opt                  shells
+stryjek_michal@instance-1:/etc$ deluser.conf
+deluser.conf: command not found
+stryjek_michal@instance-1:/etc$ dhcp
+Command 'dhcp' not found, did you mean:
+  command 'dccp' from deb dcap (2.47.12-4)
+  command 'dhcpx' from deb irpas (0.10-9)
+  command 'dhcpd' from deb isc-dhcp-server (4.4.1-2.3ubuntu2.4)
+  command 'dhcpd' from deb isc-dhcp-server-ldap (4.4.1-2.3ubuntu2.4)
+  command 'chcp' from deb nilfs-tools (2.2.8-1)
+  command 'dicp' from deb dish (1.19.1-1.1)
+  command 'hcp' from deb lam4-dev (7.1.4-7)
+Try: apt install <deb name>
+stryjek_michal@instance-1:/etc$ cd dhcp
+stryjek_michal@instance-1:/etc/dhcp$ dir
+debug  dhclient-enter-hooks.d  dhclient-exit-hooks.d  dhclient.conf
+stryjek_michal@instance-1:/etc/dhcp$ debug
+Command 'debug' not found, did you mean:
+  command 'udebug' from deb openafs-client (1.8.8.1-3ubuntu2~22.04.1)
+Try: apt install <deb name>
+stryjek_michal@instance-1:/etc/dhcp$ dhclient-exit-hooks.d
+dhclient-exit-hooks.d: command not found
+stryjek_michal@instance-1:/etc/dhcp$ cd ..
+stryjek_michal@instance-1:/etc$ cd nvme
+stryjek_michal@instance-1:/etc/nvme$ echo dirname
+dirname
+stryjek_michal@instance-1:/etc/nvme$ bin
+Command 'bin' not found, did you mean:
+  command 'bing' from deb bing (1.3.5-4)
+  command 'win' from deb wily (0.13.41-10)
+  command 'din' from deb din (51.1.1-2build1)
+  command 'ben' from deb ben (0.9.2ubuntu5)
+  command 'tin' from deb tin (1:2.6.2~20220129-1)
+  command 'dbin' from deb dbmix (0.9.8-8)
+  command 'bip' from deb bip (0.9.3-1)
+Try: apt install <deb name>
+stryjek_michal@instance-1:/etc/nvme$ echo "${PWD##*/}"
+nvme
+stryjek_michal@instance-1:/etc/nvme$ dir
+discovery.conf  hostid  hostnqn
+stryjek_michal@instance-1:/etc/nvme$ hostid | head -n 3
+800a0200
+stryjek_michal@instance-1:/etc/nvme$ 
